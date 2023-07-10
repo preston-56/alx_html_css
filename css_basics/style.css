@@ -1,0 +1,72 @@
+/* Set the font and background color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Center align the text in the header */
+  header {
+    text-align: center;
+  }
+  
+  /* Apply styles to the main content area */
+  main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the article and aside sections */
+  article {
+    flex: 2; /* Take up 2/3 of the width */
+    margin-right: 20px; /* Add some spacing between article and aside */
+  }
+  
+  aside {
+    flex: 1; /* Take up 1/3 of the width */
+  }
+  
+  /* Style the footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+  }
+  
+  /* Apply additional styling to the content within the main section */
+  main h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  main p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Style the logo */
+  .logo {
+    font-size: 32px;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  /* Media query for smartphone */
+  @media (max-width: 600px) {
+    /* Adjust layout for smaller screens */
+    body.works_on_smartphone main {
+      flex-direction: column;
+    }
+  
+    body.works_on_smartphone article,
+    body.works_on_smartphone aside {
+      flex: 1;
+      margin-right: 0;
+    }
+  }
+  
